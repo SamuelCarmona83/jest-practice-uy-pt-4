@@ -1,4 +1,4 @@
-const sum = require('./sum.js');
+import { sum } from "./sum.mjs"
 
 describe("Test the sum function", () => {
 
@@ -6,7 +6,7 @@ describe("Test the sum function", () => {
         expect( sum(1, 2) ).toBe(3); // ✅
         expect( sum(1,2)).toBeGreaterThan(0) // ✅
         expect( sum(0,1) ).not.toBe(0)
-        
+
         expect( sum(7, null) ).not.toBe(NaN) 
     });
     
